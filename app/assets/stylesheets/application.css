@@ -1,0 +1,226 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@media screen and (min-width: 1250px){
+	*{
+		margin:0;
+		padding:0;
+	}
+
+	body{
+		/*background-color: rgba(112, 123, 124,0.5);*/
+		width:100%;
+		font-family: 'K2D', sans-serif;
+		overflow-y:hidden;
+	}
+
+
+	/*==============================CONTENIDO=========================================*/
+
+	.contenedorPadre{
+		display: flex;
+		justify-content:space-between;
+		height:1000px;
+		width: 100%;
+	}
+
+	.contenedorPadre .contenedorImagen{
+		background-image:url("#{asset_path 'hombre.jpg'}" ); 
+		background-size:contain;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		width: 60%;
+	}
+
+	.contenedorPadre .contenedorFormulario{
+		width: 40%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.contenedorPadre .contenedorFormulario form{
+		width: 50%;
+		padding-top:40%;
+	}
+
+	.contenedorPadre .contenedorFormulario form label, button{
+		margin-bottom:5%;
+		margin-top:10%;
+	}
+
+	#formulario2{
+		display: none;
+	}
+}
+
+@media screen and (max-width:1250px){
+	*{
+		margin:0;
+		padding:0;
+	}
+
+	body{
+		/*background-color: rgba(112, 123, 124,0.5);*/
+		width:100%;
+		font-family: 'K2D', sans-serif;
+		background-size: cover;
+		background-image:url("hombre.jpg"); 
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+	}
+
+	/*==============================CONTENIDO=========================================*/
+
+	.contenedorPadre .contenedorImagen{
+		display: none;
+	}
+
+	.contenedorPadre .contenedorFormulario{
+		width:100%;
+		height: 100%;
+		text-align: center;
+	}
+
+	.contenedorPadre .contenedorFormulario form{
+		margin: 0 auto;
+		margin-top:5%;
+		border-radius: 15px;
+		width:50%;
+		padding:10%;		
+		background-color: white;
+	}
+
+	.contenedorPadre .contenedorFormulario form label, button{
+		margin-bottom:5%;
+		margin-top:15%;
+	}
+
+	#formulario2{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+	*{
+		margin:0;
+		padding:0;
+	}
+
+	body{
+		/*background-color: rgba(112, 123, 124,0.5);*/
+		width:100%;
+		font-family: 'K2D', sans-serif;
+		background-image:url("fondo.jpg"); 
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+
+	/*==============================CONTENIDO=========================================*/
+
+	.contenedorPadre{
+		height:900px;
+		width: 100%;
+		margin-top:2%;
+	}
+
+	.contenedorPadre .contenedorImagen{
+		display: none;
+	}
+
+	.contenedorPadre .contenedorFormulario{
+		width:100%;
+		margin: 0 auto;
+		margin-top:15%;
+		text-align: center;
+	}
+
+	.contenedorPadre .contenedorFormulario form{
+		width: 80%;
+		padding:10%;
+		
+	}
+
+	.contenedorPadre .contenedorFormulario form label, button{
+		margin-bottom:5%;
+		margin-top:5%;
+	}	
+
+	#formulario2{
+		display: none;
+	}
+}	
+
+
+
+
+
+
+@media screen and (max-width:480px){
+	*{
+		margin:0;
+		padding:0;
+	}
+
+	body{
+		background-color: rgba(112, 123, 124,0.5);
+		width:100%;
+		font-family: 'K2D', sans-serif;
+		background-image:url("fondo2.jpg"); 
+		background-size:cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+	}
+
+
+	/*==============================CONTENIDO=========================================*/
+
+	.contenedorPadre{
+		
+		height:1000px;
+		width: 100%;
+		margin-top:2%;
+	}
+
+	.contenedorPadre .contenedorImagen{
+	}
+
+	.contenedorPadre .contenedorFormulario{
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.contenedorPadre .contenedorFormulario form{
+		width: 90%;
+		padding:5%;
+		margin-top:30%;
+		
+	}
+
+	.contenedorPadre .contenedorFormulario form label, button{
+		margin-bottom:8%;
+		margin-top:8%;
+	}
+
+	#formulario2{
+		display: none;
+	}
+}
